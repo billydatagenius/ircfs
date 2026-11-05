@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact Us — IRC Financial Services</title>
+<meta name="description" content="Partner with IRC Financial Services for clarity, confidence and direction. Request a consultation — Nelspruit, South Africa. +27 81 060 6050 · info@ircfin.co.za" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@1,600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container navbar-inner">
+    <a class="nav-logo" href="index.html">
+      <svg width="34" height="34" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <rect x="6" y="27" width="8" height="15" rx="1.5" fill="#2BD08A"/>
+        <rect x="19" y="19" width="8" height="23" rx="1.5" fill="#17A57B"/>
+        <rect x="32" y="12" width="8" height="30" rx="1.5" fill="#0E7A5F"/>
+        <path d="M8 22 22 13l8 4L42 7" stroke="#E9A066" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M35 6h8v8" stroke="#E9A066" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="nav-logo-text"><b>IRC</b><span>FINANCIAL SERVICES</span></span>
+    </a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <div class="drop">
+          <a href="services.html">Services
+            <svg class="caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m6 9 6 6 6-6"/></svg></a>
+          <div class="drop-menu">
+            <a href="services.html#svc-reporting">Financial Reporting</a>
+            <a href="services.html#svc-statements">Financial Statements</a>
+            <a href="services.html#svc-management">Management Reporting</a>
+            <a href="services.html#svc-compliance">Compliance &amp; Regulatory</a>
+            <a href="services.html#svc-analysis">Financial Analysis</a>
+            <a href="services.html#svc-advisory">Business Advisory</a>
+          </div>
+        </div>
+        <div class="drop">
+          <a href="insights.html">Insights
+            <svg class="caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="m6 9 6 6 6-6"/></svg></a>
+          <div class="drop-menu">
+            <a href="insights.html#insight-featured">Management Dashboards</a>
+            <a href="insights.html#insight-1">Reporting Best Practices</a>
+            <a href="insights.html#insight-2">Understanding Financial Risk</a>
+            <a href="insights.html#insight-3">Compliance Updates</a>
+            <a href="insights.html#insight-4">Global Standards &amp; IFRS</a>
+            <a href="insights.html#insight-5">Boardroom Confidence</a>
+            <a href="insights.html#insight-6">Numbers into Progress</a>
+          </div>
+        </div>
+        <a href="compliance.html">Compliance</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+      <a href="contact.html" class="btn btn-primary nav-cta">Request a Consultation</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= PAGE HERO ================= -->
+<header class="page-hero">
+  <div class="container">
+    <div class="kicker">GET IN TOUCH</div>
+    <h1>Let's Build a Stronger <span class="accent">Financial Future Together</span></h1>
+    <p class="sub">Partner with IRC Financial Services for clarity, confidence and direction. Tell us about your business and we'll respond within one business day.</p>
+    <i class="copper-rule"></i>
+  </div>
+</header>
+
+<!-- ================= FORM + INFO ================= -->
+<section class="band-light">
+  <div class="container contact-wrap">
+    <div class="form-card">
+      <h3>Request a Consultation</h3>
+      <form id="consultForm" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Full Name *</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+          </div>
+          <div class="field">
+            <label for="company">Business Name</label>
+            <input id="company" name="company" type="text" placeholder="Your company" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="email">Email Address *</label>
+            <input id="email" name="email" type="email" placeholder="name@company.co.za" required />
+          </div>
+          <div class="field">
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="phone" type="tel" placeholder="+27 __ ___ ____" />
+          </div>
+        </div>
+        <div class="field">
+          <label for="service">Service of Interest *</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Select a service…</option>
+            <option>Financial Reporting</option>
+            <option>Financial Statements</option>
+            <option>Management Reporting</option>
+            <option>Compliance &amp; Regulatory Reporting</option>
+            <option>Financial Analysis</option>
+            <option>Business Advisory</option>
+            <option>Not sure — need guidance</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Tell Us About Your Needs *</label>
+          <textarea id="message" name="message" placeholder="A short description of your business and what you'd like to achieve…" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Consultation Request
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+        <small style="display:block;margin-top:12px;color:rgba(18,49,47,.55);font-size:12.5px">Submitting opens an email to info@ircfin.co.za with your details pre-filled. We reply within one business day.</small>
+      </form>
+    </div>
+
+    <div style="display:grid;gap:22px">
+      <div class="info-card">
+        <h3>Contact Details</h3>
+        <ul class="info-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.4c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></svg>
+            <span><a href="tel:+27810606050">+27 81 060 6050</a><small>Mon–Fri, 08:00–17:00 SAST</small></span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+            <span><a href="mailto:info@ircfin.co.za">info@ircfin.co.za</a><small>General &amp; consultation requests</small></span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Nelspruit, Mpumalanga, South Africa<small>On-site and remote engagements nationwide</small></span>
+          </li>
+        </ul>
+      </div>
+      <div class="info-card">
+        <div class="thumb"><img src="images/03_corporate_architecture.png" alt="IRC Financial Services headquarters in Nelspruit" /></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA ================= -->
+<section class="cta-band">
+  <div class="container cta-inner">
+    <div>
+      <h2>Clarity, Confidence and <span class="accent">Direction.</span></h2>
+      <p>The sooner we understand your numbers, the sooner they start working for you.</p>
+    </div>
+    <a href="tel:+27810606050" class="btn btn-ghost">Call +27 81 060 6050
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <span style="display:flex;flex-direction:column;line-height:1.1"><b>IRC</b><span>FINANCIAL SERVICES</span></span>
+      </div>
+      <p>Delivering insightful, compliant and strategic financial reporting solutions for a smarter, stronger tomorrow.</p>
+      <div class="brand-values">ACCURACY • TRANSPARENCY • GROWTH</div>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="insights.html">Insights</a></li>
+                <li><a href="compliance.html">Compliance</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html">Financial Reporting</a></li>
+        <li><a href="services.html">Financial Statements</a></li>
+        <li><a href="services.html">Management Reporting</a></li>
+        <li><a href="services.html">Compliance &amp; Regulatory</a></li>
+        <li><a href="services.html">Business Advisory</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:+27810606050">+27 81 060 6050</a></li>
+        <li><a href="mailto:info@ircfin.co.za">info@ircfin.co.za</a></li>
+        <li>Nelspruit, South Africa</li>
+        <li><a href="contact.html" style="color:var(--emerald-bright);font-weight:700">Request a Consultation →</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 IRC Financial Services. Accuracy · Transparency · Growth.</div>
+</footer>
+
+<script>
+document.getElementById('consultForm').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var f = e.target;
+  if (!f.name.value || !f.email.value || !f.service.value || !f.message.value) {
+    alert('Please complete the required fields (marked with *).'); return;
+  }
+  var subject = encodeURIComponent('Consultation Request — ' + f.service.value + ' (' + f.name.value + ')');
+  var body = encodeURIComponent(
+    'Name: ' + f.name.value + '\n' +
+    'Business: ' + f.company.value + '\n' +
+    'Email: ' + f.email.value + '\n' +
+    'Phone: ' + f.phone.value + '\n' +
+    'Service of interest: ' + f.service.value + '\n\n' +
+    f.message.value
+  );
+  window.location.href = 'mailto:info@ircfin.co.za?subject=' + subject + '&body=' + body;
+});
+</script>
+
+</body>
+</html>
