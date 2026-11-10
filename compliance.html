@@ -25,7 +25,7 @@
       <span class="nav-logo-text"><b>IRC</b><span>FINANCIAL SERVICES</span></span>
     </a>
     <div class="nav-right">
-      <div class="nav-links">
+      <div class="nav-links" id="nav-links">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
         <div class="drop">
@@ -55,8 +55,12 @@
         </div>
         <a href="compliance.html" class="active">Compliance</a>
         <a href="contact.html">Contact</a>
+        <a href="contact.html" class="menu-cta">Request a Consultation</a>
       </div>
       <a href="contact.html" class="btn btn-primary nav-cta">Request a Consultation</a>
+      <button class="nav-burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
 </nav>
@@ -311,5 +315,33 @@
   <div class="footer-bottom">© 2026 IRC Financial Services. Accuracy · Transparency · Growth.</div>
 </footer>
 
+<script>
+  (function(){
+    var nav = document.querySelector('.navbar');
+    if (!nav) return;
+    var burger = nav.querySelector('.nav-burger');
+    var mq = window.matchMedia('(max-width:820px)');
+    if (burger) {
+      burger.addEventListener('click', function(){
+        var open = nav.classList.toggle('menu-open');
+        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    }
+    document.querySelectorAll('.navbar .drop > a').forEach(function(a){
+      a.addEventListener('click', function(e){
+        if (mq.matches) {
+          e.preventDefault();
+          a.parentElement.classList.toggle('open');
+        }
+      });
+    });
+    document.querySelectorAll('.navbar .nav-links a:not(.menu-cta)').forEach(function(a){
+      a.addEventListener('click', function(){
+        nav.classList.remove('menu-open');
+        if (burger) burger.setAttribute('aria-expanded', 'false');
+      });
+    });
+  })();
+</script>
 </body>
 </html>
